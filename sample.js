@@ -9,7 +9,7 @@ console.log(arr1);
 
 console.log("-----------------------------------------------------------------")
 
-
+// Initializing 2D array
 let arrOfArrays = [];
 for (let i = 0; i < 3; i++)
 {
