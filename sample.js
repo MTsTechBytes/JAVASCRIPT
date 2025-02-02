@@ -26,7 +26,7 @@ console.table(arrOfArrays);
 console.log("-----------------------------------------------------------------")
 
 
-
+// Finding number of vowels in a string using arrow function
 const countVow = (string) => {
     let count = 0;
     for (let char of string)
@@ -41,10 +41,20 @@ const countVow = (string) => {
 };
 
 console.log(countVow("hello"));
-// console.log("Total vowels = ", count);
+console.log("Total vowels = ", count);
 
 console.log("-----------------------------------------------------------------")
 
+//Spread Parameter (Used in function arguments)
+function addNumbers(a, b, c, d) {
+    console.log(a+b+c+d)
+}
+
+let x = [1, 2]
+let y = [3, 4]
+addNumbers(...x, ...y)
+
+//Rest Parameter (Used in function parameter list)
 function someFunction(param1, ...param2) {
     console.log(param1, param2);
   }
@@ -93,7 +103,7 @@ doOuterFunctionStuff(3);
 
 console.log("-----------------------------------------------------------------")
 
-//Function Callback
+//Anonymous Function and Function Callback
 let anonymousFunction = function() {
     console.log("I am an anonymous function");
 }
